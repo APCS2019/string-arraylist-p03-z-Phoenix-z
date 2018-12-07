@@ -29,8 +29,11 @@ public class Word{
      *    before the method was called
      */
     public static void scrambleOrRemove(List<String> wordList){
-        1. 
-
+        1. for (int i = 0 ; i < wordList.length(); i++)
+        1. if the wordList.get(i).equals(crambledWord.(wordList.get(i))){
+         WordList.remove(i);}
+        3. return wordList
+            
     }
 
     public static void main(String[] args)
