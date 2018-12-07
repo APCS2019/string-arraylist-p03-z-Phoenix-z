@@ -13,7 +13,10 @@ public class Word{
      */
     public static String scrambleWord(String word)
     {
-        /* part (a) */
+        1. create a string str as same as the word;
+        2. while the indexOf "A" is not -1
+        3. find the index of "A", if the next word is not "A", swap them.
+        4. change str into the string str.substring(str.indexOf("A")+2);
     }
     /** Modifies wordList by replacing each word with its scrambled
      *  version, removing any words that are unchanged as a result of scrambling.
@@ -26,7 +29,7 @@ public class Word{
      *    before the method was called
      */
     public static void scrambleOrRemove(List<String> wordList){
-        /* part (b) */
+        1. 
 
     }
 
