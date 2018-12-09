@@ -13,7 +13,28 @@ public class Word{
      */
     public static String scrambleWord(String word)
     {
-        /* part (a) */
+        1. create a string str as same as the word;
+        2. while the indexOf "A" is not -1
+        3. find the index of "A", if the next word is not "A", swap them.
+        4. change str into the string str.substring(str.indexOf("A")+2);
+_____________________________________________________________________________________
+        real code:
+        
+        String temp = "";
+        for (int i = 0; i < word.length()-1 ; i++){
+            String a = word.substring(i,i+1);
+            String b = word.substring(i+1,i+2);
+            if (a.equals("A")&&b.equals("A")){
+                temp += b+a;
+                i++;
+            }
+            else{
+                temp += a;
+            
+        if(!word.substring(word.length()-2).equals("A")){
+            temp += word.substring(word.length()-1);
+        }
+        return temp;
     }
     /** Modifies wordList by replacing each word with its scrambled
      *  version, removing any words that are unchanged as a result of scrambling.
@@ -26,8 +47,19 @@ public class Word{
      *    before the method was called
      */
     public static void scrambleOrRemove(List<String> wordList){
-        /* part (b) */
-
+        1. for (int i = 0 ; i < wordList.length(); i++)
+        1. if the wordList.get(i).equals(crambledWord.(wordList.get(i))){
+         WordList.remove(i);}
+        3. return wordList;
+________________________________________________________________________________      
+        real code:
+        
+        for (int i = 0 ; i < wordList.size(); i ++){
+        if(wordList.get(i).equals(scrambledWord.(wordList.get(i)))){
+            wordList.remove(i);
+            i--;
+        }
+        }
     }
 
     public static void main(String[] args)
